@@ -1,38 +1,159 @@
-.App {
+*{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+@font-face{
+  src: url('../assets/fonts/Commissioner/static/Commissioner-Regular.ttf');
+  font-family: Commissioner-regular;
+}
+@font-face{
+  src: url('../assets/fonts/Commissioner/static/Commissioner-SemiBold.ttf');
+  font-family: Commissioner-semiBold;
+}
+.App{
+  position: relative;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+.logo{
+  width: 116px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.blobLeft, .blobRight{
+  position: absolute;
+  z-index: 1;
+}
+.blobRight{
+  height: auto;
+  width: 390px;
+  top:0%;
+  right: 0%;  
+}
+.blobLeft{
+  width: 680px;
+  height: auto;
+  bottom: 0%;
+  left: 0%;
+}
+.hero{
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.heroTitle{
+  font-family: Commissioner-regular;
+  font-size: 48px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heroText{
+  font-family: Commissioner-regular;
+  font-size: 24px;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heroButtons{
+ width: 80%;
+ height: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heroButton{
+  height: 64px;
+  width: 50%;
+  border: none;
+  background-color: #0B3D91;
   color: white;
+  font-family: Commissioner-regular;
+  font-size: 24px;
+  border-radius: 16px;
 }
-
-.App-link {
-  color: #61dafb;
+.heroArchive{
+  height: 64px;
+  width: 30%;
+  font-family: Commissioner-regular;
+  font-size: 18px;
+  color: #0B3D91;
+  border: none;
+  background-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 1310px){
+  .blobRight{
+    height: auto;
+    width: 240px;
+    top:0%;
+    right: 0%;  
   }
-  to {
-    transform: rotate(360deg);
+  .blobLeft{
+    width: 530px;
+    height: auto;
+    bottom: 0%;
+    left: 0%;
+  }
+  .hero{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .blobRight, .blobLeft{
+    display: none; 
+  }
+  .hero{
+    width: 80%;
+  }
+  .logo{
+    top: 20px;
+    left: 50%;
+    margin-left: -58px;
+  }
+}
+@media screen and (max-width: 828px){
+  .heroTitle{
+    font-size: 36px;
+  }
+  .heroText{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 660px){
+  .logo{
+    width: 66px;
+    top: 15px;
+    margin-left: -33px ;
+  }
+  .hero{
+    height: 70%;
+    width: 90%;
+  }
+  .heroButton{
+    width: 60%;
+  }
+
+}
+@media screen and (max-width: 460px){
+  .heroButton{
+    width: 95%;
+  }
+  .hero{
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 360px){
+  .heroTitle{
+    font-size: 24px;
+  }
+  .heroText{
+    font-size: 14px;
   }
 }
