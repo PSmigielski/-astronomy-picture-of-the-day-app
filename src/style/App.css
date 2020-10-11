@@ -15,6 +15,17 @@
   position: relative;
   z-index: 0;
   width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.home{
+  position: relative;
+  z-index: 0;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -78,6 +89,7 @@
   font-family: Commissioner-regular;
   font-size: 24px;
   border-radius: 16px;
+  cursor: pointer;
 }
 .heroArchive{
   height: 64px;
