@@ -4,7 +4,7 @@ import ResponsiveEmbed from 'react-responsive-embed';
 import Arrow from '../components/Arrow';
 import DataContainer from '../components/DataContainer';
 import Logo from '../components/Logo';
-import '../style/App.css';
+import '../style/main.css';
 
 const PhotoView = ({ data }) => {
   return(

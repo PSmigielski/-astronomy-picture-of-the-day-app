@@ -1,6 +1,6 @@
 import React from 'react';
-import '../style/App.css';
-import LogoSvg from '../assets/logo.svg';
+import './index.css';
+import LogoSvg from '../../assets/logo.svg';
 
 const Logo = ({preview}) => {
     let left,margin;

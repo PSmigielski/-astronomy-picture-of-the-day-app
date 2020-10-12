@@ -1,0 +1,21 @@
+.blobRight{
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  width: 390px;
+  top:0%;
+  right: 0%;  
+}
+@media screen and (max-width: 1310px){
+  .blobRight{
+    height: auto;
+    width: 240px;
+    top:0%;
+    right: 0%;  
+  }
+}
+@media screen and (max-width: 1024px){
+  .blobRight{
+    display: none; 
+  }
+}
