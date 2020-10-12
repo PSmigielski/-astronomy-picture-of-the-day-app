@@ -13,7 +13,7 @@ const Hero = ({setData}) => {
       <h1 className="heroTitle">Astronomy Picture of the day</h1>
       <p className="heroText">Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p> 
       <div className="heroButtons">
-        <button className="heroButton" onClick={handleClick}>see the photo</button>
+        <button className="heroButton" onClick={handleClick}>see the picture</button>
         <button className="heroArchive">archive</button>
       </div>
     </div>   
