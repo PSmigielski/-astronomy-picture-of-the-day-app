@@ -6,7 +6,7 @@ import axios from "axios";
 const Hero = ({setData}) => {
   const handleClick = () => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-      .then(res => setData(res))  
+      .then(res => setData(res.data))  
   }
   return(
     <div className="hero">
