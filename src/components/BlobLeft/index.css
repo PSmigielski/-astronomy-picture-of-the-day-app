@@ -1,0 +1,21 @@
+.blobLeft{
+  position: absolute;
+  z-index: 1;
+  width: 680px;
+  height: auto;
+  bottom: 0%;
+  left: 0%;
+}
+@media screen and (max-width: 1024px){
+  .blobLeft{
+    display: none; 
+  }
+}
+@media screen and (max-width: 1310px){
+  .blobLeft{
+    width: 530px;
+    height: auto;
+    bottom: 0%;
+    left: 0%;
+  }
+}
