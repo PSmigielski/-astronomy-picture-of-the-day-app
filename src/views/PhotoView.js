@@ -12,9 +12,11 @@ const PhotoView = ({ data }) => {
       <Arrow />
       <Logo preview="true"/>
       <div className="dataWrapper">
-        {data.media_type==="video" ? 
-          <ResponsiveEmbed src={data.url} allowFullScreen/>
-        : <img className="dataImage" src={data.url} alt={data.title ? data.title : 'alternative'}/ >}
+        <div className="pictureContaier">
+          {data.media_type==="video" ? 
+            <ResponsiveEmbed src={data.url} allowFullScreen/>
+          : <img className="dataImage" src={data.url} alt={data.title ? data.title : 'alternative'}/ >}
+        </div>
         <DataContainer  data={ data }/>
       </div>
     </div>
