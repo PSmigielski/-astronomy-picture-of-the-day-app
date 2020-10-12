@@ -1,18 +1,16 @@
-import React from 'react';
-import './style/App.css';
-//import components
-import Logo from './components/Logo';
-import BlobLeft from './components/BlobLeft';
-import BlobRight from './components/BlobRight';
-import Hero from './components/Hero';
-
+import React, {useState, useEffect} from 'react';
+// import views
+import Home from './views/Home';
+import PhotoView from './views/PhotoView';
 function App() {
+  const [data, setData] = useState({})
+  useEffect(()=>{
+    if(data.date) console.log(data);
+  }, [data])
   return (
     <div className="App">
-      <Logo />
-      <BlobLeft /> 
-      <BlobRight /> 
-      <Hero/>
+      <Home setData={setData}/>
+      <PhotoView data={data}/>
     </div>
   );
 }

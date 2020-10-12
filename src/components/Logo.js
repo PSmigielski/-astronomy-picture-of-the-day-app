@@ -2,8 +2,20 @@ import React from 'react';
 import '../style/App.css';
 import LogoSvg from '../assets/logo.svg';
 
-const Logo = () => (
-    <img className="logo" src={LogoSvg} alt="logo"/>
-);
+const Logo = ({preview}) => {
+    let left,margin;
+  if(preview){
+    left = '50%'
+    margin = '-58px'
+  }
+  const logoStyle = {
+    left: left,
+    marginLeft: margin,
+  } 
+  return(
+    <img className="logo" style={logoStyle} src={LogoSvg} alt="logo"/>
+  )
+}
+
 
 export default Logo;
