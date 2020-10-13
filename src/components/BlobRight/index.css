@@ -1,8 +1,9 @@
 .blobRight{
   position: absolute;
   z-index: 1;
-  height: auto;
+  height: 627px;
   width: 390px;
+  width: 420px;
   top:0%;
   right: 0%;  
 }
