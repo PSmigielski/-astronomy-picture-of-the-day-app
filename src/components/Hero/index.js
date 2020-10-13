@@ -3,10 +3,13 @@ import './index.css';
 
 import axios from "axios";
 
-const Hero = ({setData}) => {
+const Hero = ({setData, setRecived}) => {
   const handleClick = () => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-      .then(res => setData(res.data))  
+      .then(res => {
+        setData(res.data)
+        setRecived(true)
+      })  
   }
   return(
     <div className="hero">

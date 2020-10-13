@@ -6,10 +6,10 @@ import DataContainer from '../components/DataContainer';
 import Logo from '../components/Logo';
 import '../style/main.css';
 
-const PhotoView = ({ data }) => {
+const PhotoView = ({ data, setRecived }) => {
   return(
     <div className="photoView">
-      <Arrow />
+      <Arrow setRecived={setRecived}/>
       <Logo preview="true"/>
       <div className="dataWrapper">
         <div className="pictureContaier">

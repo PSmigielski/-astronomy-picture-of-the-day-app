@@ -52,4 +52,7 @@ z-index: 1;
 .pictureContaier{
   width: 60%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
