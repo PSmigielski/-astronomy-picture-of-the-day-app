@@ -1,5 +1,9 @@
 .arrow{
+  position: relative;
+  cursor: pointer;
+}
+.arrowContainer{
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top:50px;
+  left:50px;
 }
