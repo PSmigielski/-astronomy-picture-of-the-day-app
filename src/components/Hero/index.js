@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+//import style
 import './index.css';
 
 import axios from "axios";
@@ -16,7 +18,9 @@ const Hero = ({setData, setRecived}) => {
       <h1 className="heroTitle">Astronomy Picture of the day</h1>
       <p className="heroText">Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer.</p> 
       <div className="heroButtons">
-        <button className="heroButton" onClick={handleClick}>see the picture</button>
+        <Link className="buttonContainer" to="/picture">
+          <button className="heroButton" onClick={handleClick}>see the picture</button>
+        </Link>
         <button className="heroArchive">archive</button>
       </div>
     </div>   
