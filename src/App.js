@@ -8,6 +8,7 @@ import {AnimatePresence} from 'framer-motion';
 // import views
 import Home from './views/Home';
 import PhotoView from './views/PhotoView';
+import Archive from './views/Archive';
 // import main style
 import './style/main.css'
 function App() {
@@ -23,6 +24,9 @@ function App() {
         <Switch location={location} key={location.key}>
           <Route path="/picture">
             <PhotoView data={data} recived={recived} setRecived={setRecived}/> 
+          </Route>
+          <Route path="/archive">
+            <Archive setRecived={setRecived}/> 
           </Route>
           <Route path="/">
             <Home setData={setData} setRecived={setRecived}/>
