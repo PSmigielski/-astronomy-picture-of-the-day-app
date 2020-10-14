@@ -1,22 +1,40 @@
+.logoContainer{
+  width: 116px;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .logo{
-    width: 116px;
-    height: auto;
-    position: absolute;
-    top: 20px;
-    left:20px;
+  width: 116px;
+  height: auto;
+  position: relative;
+}
+.logoLabel{
+  font-size: 14px;
+  font-family: Commissioner-semiBold;
+  width: 116px;
+  text-align: center;
 }
 @media screen and (max-width: 660px){
-    .logo{
-      width: 66px;
-      top: 15px;
-      margin-left: -33px ;
-    }
+  .logo{
+    width: 66px;
+  }
+  .logoContainer{
+    width: 66px;
+    top: 15px;
+    margin-left: -33px ;
+  }
 }
 @media screen and (max-width: 1024px){
-    .logo{
-      top: 20px;
-      left: 50%;
-      margin-left: -58px;
-    }
+  .logoContainer{
+    top: 20px;
+    left: 50%;
+    margin-left: -58px;
   }
+}
   
