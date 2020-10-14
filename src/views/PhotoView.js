@@ -1,5 +1,6 @@
 import React from 'react';
 import ResponsiveEmbed from 'react-responsive-embed';
+import { motion } from 'framer-motion'
 
 import Arrow from '../components/Arrow';
 import DataContainer from '../components/DataContainer';
@@ -8,8 +9,27 @@ import Loader from '../components/Loader';
 import '../style/main.css';
 
 const PhotoView = ({ data, setRecived, recived }) => {
+  const containerVariants = {
+    hidden: {
+      opacity:0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { delay: .2, duration: 1.5}
+    },
+    exit: {
+      y: '-100vh',
+      transition: {ease: 'easeInOut'}
+    }
+  }
   return(
-    <div className="photoView">
+    <motion.div 
+      className="photoView"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <Arrow setRecived={setRecived}/>
       <Logo preview="true"/>
 {recived ? <div className="dataWrapper">
@@ -20,7 +40,7 @@ const PhotoView = ({ data, setRecived, recived }) => {
         </div>
         <DataContainer  data={ data }/>
       </div> : <Loader />}
-    </div>
+    </motion.div>
   )   
 }
 
