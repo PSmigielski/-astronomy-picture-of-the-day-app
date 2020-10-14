@@ -11,16 +11,11 @@ const BlobRight = () => {
     const particles = elements.getElementById('particles')
     gsap.set([...particles.children], {autoAlpha: 0});
     
-    const tl = gsap.timeline({defaults: {ease: 'power3.inOut'},paused:true, reversed: true})
+    const tl = gsap.timeline({defaults: {ease: 'power3.inOut'}})
 
     tl.to(particles.children, {duration:2.5, autoAlpha:1, stagger: 0.3})
        .fromTo(particles.children, {scale: 1}, {duration:2, scale: 0 , stagger:0.2}, '-=0.15').repeat(-1).repeatDelay(1)
 
-    if (tl.reversed()) {
-        tl.play();
-    } else {
-        tl.reverse();
-    }
   })
 
   return(
