@@ -18,7 +18,7 @@ const PhotoView = ({ data, setRecived, recived }) => {
       transition: { delay: .2, duration: 1.5}
     },
     exit: {
-      y: '-100vh',
+      y: '100vh',
       transition: {ease: 'easeInOut'}
     }
   }
