@@ -14,7 +14,7 @@ const BlobLeft = () => {
     const tl = gsap.timeline({defaults: {ease: 'power3.inOut'}})
 
     tl.to(particles.children, {duration:2.5, autoAlpha:1, stagger: 0.3})
-       .fromTo(particles.children, {scale: 1}, {duration:1, scale: 0 , stagger:0.2}, '-=0.15').repeat(-1).repeatDelay(1)
+       .fromTo(particles.children, {scale: 1}, {duration:1, scale: 0 , stagger:0.2}, '-=0.15').repeat(-1).repeatDelay(0.5)
   })
 
   return(
