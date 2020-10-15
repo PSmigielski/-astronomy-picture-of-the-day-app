@@ -1,11 +1,15 @@
 import React, {useEffect, useState} from 'react';
-import { motion } from 'framer-motion'
+import axios from 'axios';
+import { motion } from 'framer-motion';
 
+import ArchiveGallery from '../components/ArchiveGallery'
 import Arrow from '../components/Arrow';
 import Logo from '../components/Logo';
-import axios from 'axios';
+import '../style/main.css';
+
 
 const Archive = ({setRecived}) => {
+  const [data, setData] = useState([])
   const containerVariants = {
     hidden: {
       opacity:0,
@@ -20,16 +24,25 @@ const Archive = ({setRecived}) => {
     }
   }  
   let result = [];
-  useEffect(()=>{
+  const getData = () =>{
     const now = new Date();
-    for (var d = new Date(now.getFullYear(), now.getMonth() - 1, now.getDate()); d <= now; d.setDate(d.getDate() + 1)) {
+    for (var d = new Date(now.getFullYear(), now.getMonth() - 1, now.getDate()+1); d <= now; d.setDate(d.getDate() + 1)) {
       let date = new Date(d);
       let fulldate = `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
       axios.get(`https://api.nasa.gov/planetary/apod?api_key=0ZkA7ov8qU0A0ZgQzu4vOj3cODyJiCYdXXt3sAdj&date=${fulldate}`)
-        .then(res => result.push(res.data))
+        .then(res => {
+          result.push(res.data)
+        })
+        .catch(err => {
+          console.log(err);
+        })
     }
+    setData(result)
     console.log(result)
-  })
+  }
+  useEffect(()=>{
+    getData()
+  },[])
   return(
     <motion.div 
       className="archiveContainer"
@@ -40,6 +53,7 @@ const Archive = ({setRecived}) => {
     >
       <Arrow setRecived={setRecived}/>
       <Logo size={{width:'80px', height:'80px'}} preview={true}/>
+      <ArchiveGallery data={data}/>
     </motion.div>
   )
 }
