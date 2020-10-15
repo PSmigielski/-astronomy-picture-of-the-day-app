@@ -11,7 +11,9 @@ const Hero = ({setData, setRecived}) => {
       .then(res => {
         setData(res.data)
         setRecived(true)
-      })  
+      }).catch((err) => {
+        console.log(err)
+      }) 
   }
   return(
     <div className="hero">

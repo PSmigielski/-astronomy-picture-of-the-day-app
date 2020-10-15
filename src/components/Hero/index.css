@@ -51,6 +51,39 @@
   border: none;
   background-color: transparent;
 }
+@media screen and (max-width: 1310px){
+  .hero{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px){
+  .hero{
+    width: 80%;
+  }
+  .heroButton{
+    width: 50%;
+  } 
+}
+@media screen and (max-width: 828px){
+  .heroTitle{
+    font-size: 36px;
+  }
+  .heroText{
+    font-size: 18px;
+  }
+  .heroButton{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 660px){
+  .hero{
+    height: 70%;
+    width: 90%;
+  }
+  .heroButton{
+    width: 80%;
+  }
+}
 @media screen and (max-width: 460px){
   .heroButton{
     width: 95%;
@@ -67,31 +100,8 @@
     font-size: 14px;
   }
 }
-@media screen and (max-width: 660px){
-  .hero{
-    height: 70%;
-    width: 90%;
-  }
-  .heroButton{
-    width: 60%;
-  } 
-}
-@media screen and (max-width: 828px){
-  .heroTitle{
-    font-size: 36px;
-  }
-  .heroText{
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 1024px){
-  .hero{
-    width: 80%;
-  }
-}
-@media screen and (max-width: 1310px){
-  .hero{
-    width: 50%;
-  }
-}
+
+
+
+
   
