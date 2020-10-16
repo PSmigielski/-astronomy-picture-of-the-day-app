@@ -33,7 +33,7 @@ const PhotoView = ({ data, setRecived, recived }) => {
       <Arrow setRecived={setRecived}/>
       <Logo preview="true"/>
 {recived ? <div className="dataWrapper">
-        <div className="pictureContaier">
+        <div className="pictureContainer">
           {data.media_type==="video" ? 
             <ResponsiveEmbed src={data.url} allowFullScreen/>
           : <img className="dataImage" src={data.url} alt={data.title ? data.title : 'alternative'}/ >}

@@ -46,13 +46,58 @@ z-index: 1;
   margin-top: 20px;
 }
 .dataImage{
-  height: 100%;
+  height: 80%;
   width: auto;
 }
-.pictureContaier{
+.pictureContainer{
   width: 60%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (max-width:1600px){
+  .dataImage{
+    height: 70%;
+    width: auto;
+  }
+}
+@media screen and (max-width:1350px){
+  .dataImage{
+    height: 100%;
+    width: auto;
+  }
+  .pictureContainer{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 2%;
+  }
+  .dataWrapper{
+    width: 95%;
+    height: 60%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:1150px){
+  .dataImage{
+    height: 100%;
+    width: auto;
+  }
+  .pictureContainer{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 2%;
+  }
+  .dataWrapper{
+    width: 95%;
+    height: 50%;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:500px){
+  .dataWrapper{
+    width: 95%;
+    height: 60%;
+    flex-direction: column;
+  }
 }
