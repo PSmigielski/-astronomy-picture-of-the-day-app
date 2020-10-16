@@ -19,3 +19,11 @@
     display: none; 
   }
 }
+@media screen and (max-height: 826px){
+  .blobLeft{
+    width: 580px;
+    height: auto;
+    bottom: 0%;
+    left: 0%;
+  }
+}

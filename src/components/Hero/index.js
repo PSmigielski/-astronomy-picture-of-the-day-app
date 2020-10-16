@@ -7,11 +7,13 @@ import axios from "axios";
 
 const Hero = ({setData, setRecived}) => {
   const handleClick = () => {
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=0ZkA7ov8qU0A0ZgQzu4vOj3cODyJiCYdXXt3sAdj')
       .then(res => {
         setData(res.data)
         setRecived(true)
-      })  
+      }).catch((err) => {
+        console.log(err)
+      }) 
   }
   return(
     <div className="hero">
@@ -21,7 +23,9 @@ const Hero = ({setData, setRecived}) => {
         <Link className="buttonContainer" to="/picture">
           <button className="heroButton" onClick={handleClick}>see the picture</button>
         </Link>
-        <button className="heroArchive">archive</button>
+        <Link className="buttonContainer" to="/archive">
+          <button className="heroArchive">archive</button>
+        </Link>
       </div>
     </div>   
   );

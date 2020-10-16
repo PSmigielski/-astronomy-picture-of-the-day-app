@@ -1,0 +1,97 @@
+.archiveForm{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.archiveTitle{
+    font-family: Commissioner-regular;
+    font-size: 48px;
+    text-align: center;
+  }
+  .archiveText{
+    font-family: Commissioner-regular;
+    font-size: 24px;
+    text-align: center;
+  }
+
+.form{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+.dateInput{
+    width: 40%;
+    height: 64px;
+    border: 1px solid rgb(121, 117, 117);
+    background-color: white;
+    color: black;
+    font-family: Commissioner-regular;
+    font-size: 24px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.submitButton{
+    width: 40%;
+    height: 64px;
+    border: none;
+    background-color: #0B3D91;
+    color: white;
+    font-family: Commissioner-regular;
+    font-size: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+@media screen and (max-width:1620px){
+  .dateInput{
+    width: 60%;
+  }
+  .submitButton{
+    width: 60%;
+  }
+}
+@media screen and (max-width:952px){
+  .archiveForm{
+      width: 60%;
+  }
+}
+@media screen and (max-width:800px){
+    .archiveTitle{
+      font-size: 36px;
+    }
+    .archiveText{
+      font-size: 18px;
+    }
+}
+@media screen and (max-width:650px){
+    .dateInput{
+        width: 80%;
+      }
+      .submitButton{
+        width: 80%;
+      }
+}
+@media screen and (max-width:480px){
+    .archiveForm{
+        width: 75%;
+    }
+}
+@media screen and (max-width:400px){
+    .archiveForm{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 360px){
+    .archiveTitle{
+      font-size: 24px;
+    }
+    .archiveText{
+      font-size: 14px;
+    }
+  }

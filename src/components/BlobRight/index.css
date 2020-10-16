@@ -20,3 +20,11 @@
     display: none; 
   }
 }
+@media screen and (max-height: 826px){
+  .blobRight{
+    height: auto;
+    width: 290px;
+    top:0%;
+    right: 0%;  
+  }
+}
