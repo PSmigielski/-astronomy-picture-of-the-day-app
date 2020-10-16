@@ -29,9 +29,6 @@ const ArchiveGallery = ({ setRecived, setData }) => {
   const handleSubmit = () => {
     getData(inputDate);
   }
-  const handleMaxDate = () => {
-
-  }
   return(
     <div className="archiveForm">
       <h1 className="archiveTitle">Archival Pictures</h1>

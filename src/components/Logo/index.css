@@ -33,8 +33,7 @@
     width: 66px;
   }
   .logoContainer{
-    width: 66px;
     top: 15px;
-    margin-left: -33px ;
+    align-items: left;
   }
 }

@@ -13,7 +13,7 @@ const Logo = ({ preview, size }) => {
     marginLeft: margin,
   } 
   const logoSize = {
-    width: size ? size.width : '116px',
+    width: size ? size.width : '',
     height: size ? size.height: '116px'
   }
   return(
