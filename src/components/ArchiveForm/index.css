@@ -1,0 +1,49 @@
+.archiveForm{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.archiveTitle{
+    font-family: Commissioner-regular;
+    font-size: 48px;
+    text-align: center;
+  }
+  .archiveText{
+    font-family: Commissioner-regular;
+    font-size: 24px;
+    text-align: center;
+  }
+.submitButton{
+    width: 40%;
+    height: 64px;
+    border: none;
+    background-color: #0B3D91;
+    color: white;
+    font-family: Commissioner-regular;
+    font-size: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.form{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+.dateInput{
+    width: 40%;
+    height: 64px;
+    border: 1px solid rgb(121, 117, 117);
+    background-color: white;
+    color: black;
+    font-family: Commissioner-regular;
+    font-size: 24px;
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+}
